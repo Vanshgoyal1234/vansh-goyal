@@ -7,10 +7,8 @@ const Footer = () => {
       <p>
         Designed & Built with ❤️ by{" "}
         <a 
-          href="#" 
+          href="#about" 
           className="text-teal hover:underline"
-          target="_blank" 
-          rel="noopener noreferrer"
         >
           Vansh Goyal
         </a>

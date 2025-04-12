@@ -16,7 +16,7 @@ const AboutSection = () => {
             I build and design solutions.
           </h2>
           <p className="text-slate max-w-md mb-8">
-            I'm a passionate engineering student specializing in [your field] with a focus on creating innovative solutions to complex problems. My expertise includes [key skills] and I'm constantly learning new technologies to expand my knowledge base.
+            I'm a passionate engineering student specializing in Electronics and Telecommunication Engineering at MIT Academy of Engineering, Alandi. I'm focused on creating innovative solutions and expanding my technical skills.
           </p>
           <div className="flex gap-4">
             <Button className="bg-teal text-navy hover:bg-teal/80 hover:text-navy">
@@ -43,13 +43,13 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-2">
             <p className="mb-4">
-              Hello! My name is Vansh Goyal, and I enjoy creating things that solve real-world problems. My interest in engineering started back in [year/experience] when I discovered how [specific experience related to engineering].
+              Hello! My name is Vansh Goyal, and I enjoy creating things that solve real-world problems. My interest in engineering started when I discovered how technology can transform our daily lives and create positive impact.
             </p>
             <p className="mb-4">
-              Fast-forward to today, I've had the privilege to study at [Your University], where I've gained valuable knowledge and practical experience in [specific areas]. I've worked on various projects that have helped me develop my skills and understand the importance of [specific aspect of engineering].
+              Currently, I'm a first-year student studying Electronics and Telecommunication Engineering at MIT Academy of Engineering, Alandi. I'm developing my knowledge in circuit design, programming, and electronics fundamentals while working on projects that help me apply these concepts practically.
             </p>
             <p>
-              My main goal is to [your career/professional goal] while continuing to learn and grow in this ever-evolving field. I'm particularly interested in [specific interest areas or technologies].
+              My main goal is to gain expertise in electronic systems and communication technologies while building innovative solutions. I'm particularly interested in embedded systems, circuit design, and IoT applications.
             </p>
           </div>
           <div>
