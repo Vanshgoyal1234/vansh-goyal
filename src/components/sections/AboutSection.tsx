@@ -10,7 +10,7 @@ const AboutSection = () => {
         <div className="animate-slide-in-left">
           <p className="text-teal mb-4 font-mono">Hi, my name is</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-lightestSlate">
-            Engineering Student.
+            Vansh Goyal.
           </h1>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-slate">
             I build and design solutions.
@@ -31,7 +31,7 @@ const AboutSection = () => {
         <div className="relative max-w-md mx-auto lg:ml-auto animate-slide-in-right">
           <div className="aspect-square rounded-lg overflow-hidden relative z-10 border-2 border-teal/20">
             <div className="w-full h-full bg-gradient-to-br from-teal/30 to-navy flex items-center justify-center">
-              <span className="text-6xl text-teal/80">ES</span>
+              <span className="text-6xl text-teal/80">VG</span>
             </div>
           </div>
           <div className="absolute top-4 left-4 w-full h-full border-2 border-teal rounded-lg -z-0"></div>
@@ -43,7 +43,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-2">
             <p className="mb-4">
-              Hello! My name is [Your Name], and I enjoy creating things that solve real-world problems. My interest in engineering started back in [year/experience] when I discovered how [specific experience related to engineering].
+              Hello! My name is Vansh Goyal, and I enjoy creating things that solve real-world problems. My interest in engineering started back in [year/experience] when I discovered how [specific experience related to engineering].
             </p>
             <p className="mb-4">
               Fast-forward to today, I've had the privilege to study at [Your University], where I've gained valuable knowledge and practical experience in [specific areas]. I've worked on various projects that have helped me develop my skills and understand the importance of [specific aspect of engineering].

@@ -8,6 +8,11 @@ import ContactSection from "@/components/sections/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Update document title
+  React.useEffect(() => {
+    document.title = "Vansh Goyal | Portfolio";
+  }, []);
+
   return (
     <div className="min-h-screen bg-navy">
       <Navbar />

@@ -12,7 +12,7 @@ const Footer = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          Engineering Student
+          Vansh Goyal
         </a>
       </p>
       <p className="mt-2">© {new Date().getFullYear()} All Rights Reserved</p>
