@@ -56,28 +56,28 @@ const AboutSection = () => {
             <h4 className="text-xl font-medium mb-4 text-lightestSlate">Skills</h4>
             <ul className="grid grid-cols-2 gap-2 text-sm">
               <li className="flex items-center">
-                <span className="text-teal mr-2">▹</span> JavaScript
-              </li>
-              <li className="flex items-center">
                 <span className="text-teal mr-2">▹</span> Python
               </li>
               <li className="flex items-center">
-                <span className="text-teal mr-2">▹</span> React
+                <span className="text-teal mr-2">▹</span> Arduino
               </li>
               <li className="flex items-center">
-                <span className="text-teal mr-2">▹</span> CAD Design
-              </li>
-              <li className="flex items-center">
-                <span className="text-teal mr-2">▹</span> 3D Modeling
+                <span className="text-teal mr-2">▹</span> Electronics
               </li>
               <li className="flex items-center">
                 <span className="text-teal mr-2">▹</span> Circuit Design
               </li>
               <li className="flex items-center">
-                <span className="text-teal mr-2">▹</span> MATLAB
+                <span className="text-teal mr-2">▹</span> ESP8266
               </li>
               <li className="flex items-center">
-                <span className="text-teal mr-2">▹</span> Data Analysis
+                <span className="text-teal mr-2">▹</span> Microcontrollers
+              </li>
+              <li className="flex items-center">
+                <span className="text-teal mr-2">▹</span> IoT
+              </li>
+              <li className="flex items-center">
+                <span className="text-teal mr-2">▹</span> RF Engineering
               </li>
             </ul>
           </div>
