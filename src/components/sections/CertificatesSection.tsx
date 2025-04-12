@@ -3,39 +3,32 @@ import React from "react";
 import SectionContainer from "../SectionContainer";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 const certificates = [
   {
     id: 1,
-    title: "Advanced Engineering Principles",
-    issuer: "Engineering Institute of Technology",
-    date: "July 2023",
-    description: "Comprehensive certification covering advanced engineering principles and methodologies.",
-    image: "/placeholder.svg",
+    title: "Digital 101",
+    issuer: "FutureSkills Prime & NASSCOM",
+    date: "January 2024",
+    description: "Comprehensive 30-hour training program covering essential digital fundamentals approved by the IT-ITeS Sector Skills Council and Government of India.",
+    image: "/lovable-uploads/31acd10f-f07f-4d3f-9548-568228d79ea8.png",
   },
   {
     id: 2,
-    title: "Machine Learning for Engineers",
-    issuer: "Stanford Online",
-    date: "March 2023",
-    description: "Specialized training in applying machine learning algorithms to engineering problems.",
-    image: "/placeholder.svg",
+    title: "Python Essentials 1",
+    issuer: "Cisco Networking Academy",
+    date: "December 2023",
+    description: "Foundational certification covering Python programming fundamentals, data types, control structures, and basic algorithmic thinking.",
+    image: "/lovable-uploads/28f67cb9-0a6a-4f52-a07a-f0cba77d1fab.png",
   },
   {
     id: 3,
-    title: "Project Management Professional",
-    issuer: "Project Management Institute",
-    date: "November 2022",
-    description: "Industry-standard certification for project management in engineering contexts.",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 4,
-    title: "Sustainable Engineering Design",
-    issuer: "Green Engineering Foundation",
-    date: "May 2022",
-    description: "Certification in environmentally conscious engineering design principles.",
-    image: "/placeholder.svg",
+    title: "Python (Basic)",
+    issuer: "HackerRank",
+    date: "March 2023",
+    description: "Certification validating proficiency in Python basics including syntax, data structures, functions and problem-solving skills.",
+    image: "/lovable-uploads/98962807-5c1c-4833-9c9d-65175d0cd744.png",
   },
 ];
 
@@ -67,11 +60,12 @@ const CertificatesSection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="text-sm">{cert.description}</p>
+                <p className="text-sm text-lightSlate">{cert.description}</p>
               </div>
             </CardContent>
             <CardFooter>
               <Button variant="outline" size="sm" className="text-teal border-teal hover:bg-teal/10 ml-auto">
+                <ExternalLink size={16} className="mr-2" />
                 View Certificate
               </Button>
             </CardFooter>
