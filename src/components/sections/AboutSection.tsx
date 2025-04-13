@@ -2,16 +2,29 @@
 import React from "react";
 import SectionContainer from "../SectionContainer";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const AboutSection = () => {
   return (
     <SectionContainer id="about" className="pt-32">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="animate-slide-in-left">
-          <p className="text-teal mb-4 font-mono">Hi, my name is</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-lightestSlate">
-            Vansh Goyal.
-          </h1>
+          <div className="flex items-center gap-4 mb-4">
+            <Avatar className="w-20 h-20 border-2 border-teal">
+              <AvatarImage 
+                src="/lovable-uploads/4c9b66f6-48b2-4e54-b8b2-10c76081541a.png" 
+                alt="Vansh Goyal" 
+                className="object-cover"
+              />
+              <AvatarFallback>VG</AvatarFallback>
+            </Avatar>
+            <div>
+              <p className="text-teal mb-2 font-mono">Hi, my name is</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-lightestSlate">
+                Vansh Goyal.
+              </h1>
+            </div>
+          </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-slate">
             I build and design solutions.
           </h2>
