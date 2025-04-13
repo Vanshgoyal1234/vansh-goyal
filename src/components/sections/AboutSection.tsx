@@ -12,7 +12,7 @@ const AboutSection = () => {
           <div className="flex items-center gap-4 mb-4">
             <Avatar className="w-20 h-20 border-2 border-teal">
               <AvatarImage 
-                src="/lovable-uploads/4c9b66f6-48b2-4e54-b8b2-10c76081541a.png" 
+                src="/lovable-uploads/b34a331e-bc03-4eb1-88ab-9136effaba71.png" 
                 alt="Vansh Goyal" 
                 className="object-cover"
               />
