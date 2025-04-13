@@ -54,13 +54,14 @@
 
   body {
     @apply bg-navy text-lightSlate font-sans antialiased;
+    background-image: radial-gradient(circle at 50% 50%, rgba(100,255,218,0.03) 0%, rgba(10,25,47,0) 70%);
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-poppins text-lightestSlate;
   }
 
-  /* Custom utility classes */
+  /* Enhanced utility classes */
   .section-padding {
     @apply py-24 px-6 md:px-12 lg:px-24;
   }
@@ -76,6 +77,49 @@
   
   .card-hover {
     @apply transition-all duration-300 hover:shadow-[0_10px_20px_rgba(100,255,218,0.1)] hover:-translate-y-2;
+  }
+  
+  /* Designer elements */
+  .highlight-text {
+    @apply relative;
+  }
+  
+  .highlight-text::after {
+    content: "";
+    @apply absolute -z-10 bottom-0 left-0 w-full h-[30%] bg-teal/20 rounded;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-lg bg-lightNavy/50 border border-lightestNavy/50 shadow-lg;
+  }
+  
+  .btn-glow:hover {
+    box-shadow: 0 0 25px 5px rgba(100,255,218,0.4);
+  }
+  
+  .animated-border {
+    position: relative;
+    border-radius: 0.5rem;
+  }
+  
+  .animated-border::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(90deg, #64ffda, #0a192f, #64ffda);
+    background-size: 300% 300%;
+    border-radius: 0.75rem;
+    z-index: -1;
+    animation: borderAnimation 6s linear infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 }
 
@@ -97,4 +141,25 @@
 ::-webkit-scrollbar-thumb {
   background-color: theme('colors.teal');
   border-radius: 20px;
+}
+
+/* Enhanced animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s ease-in-out infinite;
 }

@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Github, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -76,16 +77,23 @@ const ContactSection = () => {
       
       <div className="mt-16 flex flex-col items-center">
         <p className="text-lightSlate mb-4">Or reach me directly at:</p>
-        <a 
-          href="mailto:your.email@example.com" 
-          className="text-teal hover:text-teal/80 underline underline-offset-4"
-        >
-          your.email@example.com
-        </a>
-        <div className="flex gap-6 mt-6">
-          <a href="#" className="text-lightSlate hover:text-teal transition-colors">LinkedIn</a>
-          <a href="#" className="text-lightSlate hover:text-teal transition-colors">GitHub</a>
-          <a href="#" className="text-lightSlate hover:text-teal transition-colors">Twitter</a>
+        <div className="flex flex-col sm:flex-row items-center gap-6">
+          <a 
+            href="mailto:202401070208@mitaoe.ac.in" 
+            className="flex items-center gap-2 text-teal hover:text-teal/80 transition-colors"
+          >
+            <Mail size={18} />
+            202401070208@mitaoe.ac.in
+          </a>
+          <a 
+            href="https://github.com/VanshGoyal1201" 
+            className="flex items-center gap-2 text-teal hover:text-teal/80 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github size={18} />
+            GitHub
+          </a>
         </div>
       </div>
     </SectionContainer>
