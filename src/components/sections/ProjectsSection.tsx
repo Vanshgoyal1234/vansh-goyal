@@ -4,7 +4,8 @@ import SectionContainer from "../SectionContainer";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { Search } from "lucide-react";
+import ImageDialog from "../ImageDialog";
 
 const projects = [
   {
@@ -13,8 +14,6 @@ const projects = [
     description: "Designed and implemented a 4G mobile network jammer on Circuit-On-Board (COB) technology that can temporarily disrupt cellular signals in a controlled environment. This project demonstrates principles of wireless communication interference and signal processing.",
     image: "/lovable-uploads/22942a65-010e-4081-9ea4-9f9dd6623574.png",
     tags: ["RF Engineering", "Electronics", "Signal Processing", "COB Technology"],
-    link: "#",
-    github: "#",
     featured: true
   },
   {
@@ -23,8 +22,6 @@ const projects = [
     description: "Created a real-time weather monitoring system using Arduino, DHT11 sensor, and LCD display that accurately measures temperature and humidity levels. This system can be used for environmental monitoring in various settings like homes, greenhouses, or laboratories.",
     image: "/lovable-uploads/4c9b66f6-48b2-4e54-b8b2-10c76081541a.png",
     tags: ["Arduino", "IoT", "Sensor Technology", "Environmental Monitoring"],
-    link: "#",
-    github: "#",
     featured: true
   },
   {
@@ -33,8 +30,6 @@ const projects = [
     description: "Developed a compact and efficient police LED light system with alternating red and blue patterns controlled by an ESP module. This project demonstrates skills in microcontroller programming, LED control, and low-power design for emergency signaling applications.",
     image: "/lovable-uploads/7c20d59f-777f-4447-9067-c03daf0a8430.png",
     tags: ["ESP8266", "LED Design", "Microcontrollers", "Embedded Systems"],
-    link: "#",
-    github: "#",
     featured: true
   },
 ];
@@ -77,14 +72,12 @@ const ProjectsSection = () => {
               </div>
               
               <div className={`flex gap-4 ${index % 2 === 0 ? '' : 'md:justify-end'}`}>
-                <Button variant="outline" size="sm" className="text-teal border-teal hover:bg-teal/10">
-                  <ExternalLink size={16} className="mr-2" />
-                  View Project
-                </Button>
-                <Button variant="ghost" size="sm" className="text-lightSlate hover:text-teal">
-                  <Github size={16} className="mr-2" />
-                  Source Code
-                </Button>
+                <ImageDialog imageSrc={project.image} imageAlt={project.title}>
+                  <Button variant="outline" size="sm" className="text-teal border-teal hover:bg-teal/10">
+                    <Search size={16} className="mr-2" />
+                    View Project
+                  </Button>
+                </ImageDialog>
               </div>
             </div>
           </div>

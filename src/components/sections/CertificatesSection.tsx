@@ -3,7 +3,8 @@ import React from "react";
 import SectionContainer from "../SectionContainer";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import ImageDialog from "../ImageDialog";
+import { Search } from "lucide-react";
 
 const certificates = [
   {
@@ -64,10 +65,12 @@ const CertificatesSection = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" size="sm" className="text-teal border-teal hover:bg-teal/10 ml-auto">
-                <ExternalLink size={16} className="mr-2" />
-                View Certificate
-              </Button>
+              <ImageDialog imageSrc={cert.image} imageAlt={cert.title}>
+                <Button variant="outline" size="sm" className="text-teal border-teal hover:bg-teal/10 ml-auto">
+                  <Search size={16} className="mr-2" />
+                  View Certificate
+                </Button>
+              </ImageDialog>
             </CardFooter>
           </Card>
         ))}

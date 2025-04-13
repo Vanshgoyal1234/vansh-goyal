@@ -32,10 +32,11 @@ const AboutSection = () => {
             I'm a passionate engineering student specializing in Electronics and Telecommunication Engineering at MIT Academy of Engineering, Alandi. I'm focused on creating innovative solutions and expanding my technical skills.
           </p>
           <div className="flex gap-4">
-            <Button className="bg-teal text-navy hover:bg-teal/80 hover:text-navy">
-              Resume
-            </Button>
-            <Button variant="outline" className="text-teal border-teal hover:bg-teal/10">
+            <Button 
+              variant="outline" 
+              className="text-teal border-teal hover:bg-teal/10"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               My Projects
             </Button>
           </div>
