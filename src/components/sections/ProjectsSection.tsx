@@ -36,7 +36,7 @@ const projects = [
     id: 4,
     title: "Accident Detection and Alert System",
     description: "Designed a vehicle accident detection and alert system using an ADXL335 accelerometer to detect sudden impacts and tilts, a NEO-6M GPS module for real-time location tracking, and a SIM800L GSM module to send emergency SMS alerts with coordinates. A push button allows manual triggering or cancellation, with power regulated through an LM2596 buck converter and the whole system controlled by an Arduino Nano.",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/accident-detection.jpeg",
     tags: ["Arduino Nano", "ADXL335", "NEO-6M GPS", "SIM800L", "LM2596", "Embedded Systems"],
     featured: true
   },
