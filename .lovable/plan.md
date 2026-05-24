@@ -1,15 +1,11 @@
-Update `src/components/sections/ProjectsSection.tsx`:
+1. Copy the uploaded L&T EduTech badge image to `public/lovable-uploads/lt-edutech-java-spring.png`.
+2. In `src/components/sections/CertificatesSection.tsx`, append a new entry to the `certificates` array:
+   - title: "Java Programming and Spring Boot Development"
+   - issuer: "L&T EduTech (LearnKonnect)"
+   - date: "2024"
+   - description: Short note about completing the Course Pathway Evaluation covering Java programming fundamentals and Spring Boot backend development.
+   - image: the new uploaded path
 
-1. Remove the "4G Mobile Network Jammer" project entry.
-2. Add new project: **Air Quality Index (AQI) Monitoring System**
-   - Description: Real-time AQI monitoring using MQ135 gas sensor and DHT11 temperature/humidity sensor with Arduino. Detects harmful gases (CO2, NH3, benzene, smoke) and tracks environmental conditions for indoor/outdoor air quality assessment.
-   - Tags: Arduino, MQ135, DHT11, Air Quality, IoT
-   - Image: placeholder (`/placeholder.svg`) until you upload one
-3. Add new project: **Accident Detection and Alert System**
-   - Description: Vehicle accident detection system using ADXL335 accelerometer to sense sudden impacts/tilts, NEO-6M GPS for location tracking, and SIM800L GSM module to send emergency SMS alerts with coordinates. Includes a push button for manual triggering/cancellation, powered through an LM2596 buck converter, and controlled by Arduino Nano.
-   - Tags: Arduino Nano, GPS, GSM, ADXL335, SIM800L, Embedded Systems
-   - Image: placeholder (`/placeholder.svg`) until you upload one
+No other changes. Existing "View Certificate" zoom dialog will work automatically.
 
-Weather Monitoring and Police LED Light projects remain unchanged. Existing "View Project" zoom dialog continues to work for all entries.
-
-Note: If you have photos for the two new projects, upload them and I'll swap the placeholders for the actual images.
+Note on skills: A previous instruction asked to only show skills shared across all projects/certs. Adding Java/Spring Boot here means those won't appear in skills unless they also relate to your projects — let me know if you'd like the skills filter relaxed to include certificate-specific skills like Java and Spring Boot.
