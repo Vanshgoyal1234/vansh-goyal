@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "Air Quality Index (AQI) Monitoring System",
     description: "Built a real-time AQI monitoring system using the MQ135 gas sensor and DHT11 temperature/humidity sensor with Arduino. The system detects harmful gases such as CO2, ammonia, benzene, and smoke while tracking environmental conditions, making it useful for indoor and outdoor air quality assessment.",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/aqi-mq135-dht11.jpeg",
     tags: ["Arduino", "MQ135", "DHT11", "Air Quality", "IoT"],
     featured: true
   },
