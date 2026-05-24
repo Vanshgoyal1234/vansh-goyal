@@ -39,6 +39,14 @@ const certificates = [
     description: "Completed the Course Pathway Evaluation covering Java programming fundamentals, object-oriented concepts, and building backend applications with the Spring Boot framework.",
     image: "/lovable-uploads/lt-edutech-java-spring.png",
   },
+  {
+    id: 5,
+    title: "Internship – True Power Connect",
+    issuer: "True Power Connect",
+    date: "1 Month",
+    description: "Completed a one-month internship at True Power Connect, gaining hands-on industry experience.",
+    image: "/lovable-uploads/true-power-connect.jpeg",
+  },
 ];
 
 const CertificatesSection = () => {
