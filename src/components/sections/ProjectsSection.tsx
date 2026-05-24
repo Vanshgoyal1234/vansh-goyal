@@ -10,10 +10,10 @@ import ImageDialog from "../ImageDialog";
 const projects = [
   {
     id: 1,
-    title: "4G Mobile Network Jammer",
-    description: "Designed and implemented a 4G mobile network jammer on Circuit-On-Board (COB) technology that can temporarily disrupt cellular signals in a controlled environment. This project demonstrates principles of wireless communication interference and signal processing.",
-    image: "/lovable-uploads/22942a65-010e-4081-9ea4-9f9dd6623574.png",
-    tags: ["RF Engineering", "Electronics", "Signal Processing", "COB Technology"],
+    title: "Air Quality Index (AQI) Monitoring System",
+    description: "Built a real-time AQI monitoring system using the MQ135 gas sensor and DHT11 temperature/humidity sensor with Arduino. The system detects harmful gases such as CO2, ammonia, benzene, and smoke while tracking environmental conditions, making it useful for indoor and outdoor air quality assessment.",
+    image: "/placeholder.svg",
+    tags: ["Arduino", "MQ135", "DHT11", "Air Quality", "IoT"],
     featured: true
   },
   {
@@ -30,6 +30,14 @@ const projects = [
     description: "Developed a compact and efficient police LED light system with alternating red and blue patterns controlled by an ESP module. This project demonstrates skills in microcontroller programming, LED control, and low-power design for emergency signaling applications.",
     image: "/lovable-uploads/7c20d59f-777f-4447-9067-c03daf0a8430.png",
     tags: ["ESP8266", "LED Design", "Microcontrollers", "Embedded Systems"],
+    featured: true
+  },
+  {
+    id: 4,
+    title: "Accident Detection and Alert System",
+    description: "Designed a vehicle accident detection and alert system using an ADXL335 accelerometer to detect sudden impacts and tilts, a NEO-6M GPS module for real-time location tracking, and a SIM800L GSM module to send emergency SMS alerts with coordinates. A push button allows manual triggering or cancellation, with power regulated through an LM2596 buck converter and the whole system controlled by an Arduino Nano.",
+    image: "/placeholder.svg",
+    tags: ["Arduino Nano", "ADXL335", "NEO-6M GPS", "SIM800L", "LM2596", "Embedded Systems"],
     featured: true
   },
 ];
