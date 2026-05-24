@@ -31,6 +31,14 @@ const certificates = [
     description: "Certification validating proficiency in Python basics including syntax, data structures, functions and problem-solving skills.",
     image: "/lovable-uploads/98962807-5c1c-4833-9c9d-65175d0cd744.png",
   },
+  {
+    id: 4,
+    title: "Java Programming and Spring Boot Development",
+    issuer: "L&T EduTech (LearnKonnect)",
+    date: "2024",
+    description: "Completed the Course Pathway Evaluation covering Java programming fundamentals, object-oriented concepts, and building backend applications with the Spring Boot framework.",
+    image: "/lovable-uploads/lt-edutech-java-spring.png",
+  },
 ];
 
 const CertificatesSection = () => {
